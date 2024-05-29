@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Ming's_h - food_tour</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Food.css">
+
+    <style>
+        .visiblea {
+            display: flex;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="bodyall">
+        <header>
+            <div id="iconsection">
+                <a href="home.html"><img src="icon.png" width="90">
+                <img src="HomeMark.png" width="120"></a>
+            </div>
+
+            <div id="navsection">
+                <nav>
+                    <ul>
+                        <li><a href="Food.html"><h2>Food</h2></a></li>
+                        <li><a href="Dessert.html"><h2>Dessert</h2></a></li>
+                        <li><a href="MyFavorite.html"><h2>My Favorite</h2></a></li>
+                        <li><a href="Results.html"><h2>Results</h2></a></li>
+                        <li><a href="Contact.html"><h2>Contact</h2></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div id="choice" class="inline-block">
+
+                <h1 id="Food" onclick="changeImage('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160215_138%2Fslow_m00n_1455533064720sNw5S_JPEG%2F%25C1%25A6%25C1%25D6%25B5%25B5_%25C6%25F8%25BC%25B3-9.jpg&type=sc960_832')">[Food]</h1>
+                <ul>
+                    <li class="inline-block" id="first" onclick="changeImage('ham.jpg')"><a><h2 class="inline-block">A_</h2>&nbsp;<h3 class="inline-block">Hamburg-Steak</h3></a></li><br>
+                    <li class="inline-block" id="second" onclick="changeImage('bbb.jpg')"><a><h2 class="inline-block">B_</h2>&nbsp;<h3 class="inline-block">Bibimbap</h3></a></li><br>
+                    <li class="inline-block" id="third" onclick="changeImage('sushi.webp')"><a><h2 class="inline-block">C_</h2>&nbsp;<h3 class="inline-block">Sushi</h3></a></li><br>
+                    <li class="inline-block" id="fourth" onclick="changeImage('meat.jpg')"><a><h2 class="inline-block">D_</h2>&nbsp;<h3 class="inline-block">Yukhoe</h3></a></li><br>     
+                    <li class="inline-block" id="fifth" onclick="changeImage('pizza.jpg')"><a><h2 class="inline-block">E_</h2>&nbsp;<h3 class="inline-block">Pizza</h3></a></li><br>                        
+                </ul>
+            </div>
+            
+            <div class="inline-block" id="framebox">
+                <img id="frame" src="frame.png" alt="프레임 사진">
+                <!--프레임 사진 아래쪽에 음식 이름 쓰기 ex)A_Hamburg-Steak-->
+                <img id="frame_in" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160215_138%2Fslow_m00n_1455533064720sNw5S_JPEG%2F%25C1%25A6%25C1%25D6%25B5%25B5_%25C6%25F8%25BC%25B3-9.jpg&type=sc960_832" alt="클릭된음식사진">
+            </div>
+
+            <div id="food_info">
+<!--food라는 문자관련 코드-->
+                <div id="food_" class="food">
+                    <pre>
+    <div class="titles"><b>위에서 원하시는 음식을 선택해주세요.</b>
+------------------------------------</div><div class="contents">    
+    <b class="contents">- 선택하신 음식에 대한 설명이 출력됩니다. </b></div>
+                    </pre>
+                </div>
+
+<!--함박스테이크 관련 코드-->
+                <div id="food_a" class="food1">
+                    <pre>
+    <div class="titles"><b>Hamburg-Steak (함박스테이크)</b>
+-----------------------------</div>
+<b class="contents-a">: 다진 고기를 반죽해서 둥글납작한 형태로 뭉친 뒤,
+     팬에 구워내는 요리
+      <b class="contents">    
+   어원 : 독일의 함부르크라는 도시의 요리
+   재료 : 다진 고기
+           (양고기,닭고기,소고기,돼지고기)
+           소금,채소 등<b>
+</pre>
+                    
+                </div>
+<!--비빔밥 관련 코드-->
+                <div id="food_b" class="food2">
+                    <pre>
+    <div class="titles"><b>Bibimbap (비빔밥)</b>
+-----------------------------</div>
+<b class="contents-a">   : 밥에 각종 나물을 넣고,
+     장을 넣어서 비벼 먹는 전통 <span style="text-decoration: underline;">한국 요리</span>
+    <b class="contents">
+   재료 : 주 양념과 
+          참기름,각종 나물, 단백질류 한가지<b>
+    
+    <span style="text-decoration: underline;">(양념: 고추장, 참기름, 볶음고추장, 간장)</span>
+                    </pre>
+                </div>
+
+<!--초밥관련 코드-->
+                <div id="food_c" class="food3">
+                    <pre>
+    <div class="titles"><b>Sushi (초밥)</b>
+-----------------------------</div>
+<b class="contents-a">   : 어패류의 살 등을 배함초에 절인 쌀밥 위에 
+     올려서 만드는 <span style="text-decoration: underline;">일본음식</span>
+   <b class="contents">
+   재료 : 회,익힌식재나 육류,식물성 재료 등,
+          배합초에 절인 쌀밥<b>
+   
+    <span style="text-decoration: underline;">(어패류의 살,달걀 등 여러 재료를 사용)</span>    
+                    </pre>
+                </div>
+
+<!--육회 관련 코드-->
+                <div id="food_d" class="food4">
+                   <pre>
+    <div class="titles"><b>Yukhoe (육회)</b>
+-----------------------------</div>
+<b class="contents-a">   : 가늘게 채를 친 고기를 전혀 익히지 않고 
+     양념에 버무려 만든 <span style="text-decoration: underline;">한국 요리</span>
+  <b class="contents">
+   재료 : 고기,설탕,소금,간장,마늘,참기름,배즙<b>
+  
+   <span style="text-decoration: underline;">(지역마다 양념 내의 첨가물은 약간씩 다르다.)</span>     
+                    </pre>
+                </div>
+
+<!--피자 관련 코드-->
+                <div id="food_e" class="food5">
+                    <pre>
+    <div class="titles"><b>Pizza (피자)</b>
+-----------------------------</div>
+<b class="contents-a">   : 밀가루로 만든 납작한 반죽에 토마토 소스와 치즈 등의
+      토핑을 얹어서 구워 내는 <span style="text-decoration: underline;">이탈리아요리</span>
+ <b class="contents">
+   재료 : 밀가루,물, 토마토소스,치즈 등의 토핑<b>
+ 
+   <span style="text-decoration: underline;">(파스타와 함께 이탈리아의 상징이다.)</span>     
+                   </pre>
+            </div>
+        </section>
+
+        <div id="frame_tag">
+            <div id="food__" class="frame_tag1"><h1>#Chosen_food</h1><h1>&emsp; #Country</h1></div>
+            <div id="food_aa" class="frame_tag1"><h1>#Hamburg-Steak</h1><h1>&emsp; #Germany</h1></div>
+            <div id="food_bb" class="frame_tag2"><h1>#Bibimbap</h1><h1>&emsp; #Korea</h1></div>
+            <div id="food_cc" class="frame_tag3"><h1>#Sushi</h1><h1>&emsp; #Japan</h1></div>
+            <div id="food_dd" class="frame_tag4"><h1>#Yukhoe</h1><h1>&emsp; #Korea</h1></div>
+            <div id="food_ee" class="frame_tag5"><h1>#Pizza</h1><h1>&emsp; #Italy</h1></div>
+            
+        </div>
+        <footer>
+            <p><b>CopyRight &#169;mingdi-munzi &#9829;</b></p>
+        </footer>
+    </div>
+    <script src="food1.js"></script>
+</body>
+
+</html>

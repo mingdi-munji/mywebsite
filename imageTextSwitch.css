@@ -1,0 +1,9 @@
+.image-container, .text-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fade-out {
+    opacity: 0.8;
+    transition: opacity 1s;
+}

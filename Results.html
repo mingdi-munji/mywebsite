@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ming's_h - food_tour</title>
+        <meta name="description" content="나와 음식의 여행기">
+        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="stylesheet" href="Results.css">
+        <script>
+            var currentIndex = 0;
+            var images = [
+                'AI_cer.png',
+                'internship_comp.png',
+                'golden_a.png',
+                'intel_capstone_comp.png',
+                'Uda_python.png',
+                'ham.jpg'
+            ];
+    
+            function changeImage(image) {
+                document.getElementById('result_img').src = image;
+            };
+        </script>
+    </head>
+
+    <body>
+        <div id="bodyall">
+            <header>
+                <div id="iconsection">
+                    <a href="home.html"><img src="icon.png" width="90">
+                    <img src="HomeMark.png" width="120">
+                    </a>
+                </div>
+
+                <div id="navsection">
+                    <nav>
+                        <ul>
+                            <li><a href="Food.html"><h2>Food</h2></a></li>
+                            <li><a href="Dessert.html"><h2>Dessert</h2></a></li>
+                            <li><a href="MyFavorite.html"><h2>My Favorite</h2></a></li>
+                            <li><a href="Results.html"><h2>Results</h2></a></li>
+                            <li><a href="Contact.html"><h2>Contact</h2></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="largesection">
+                <nav>
+                    <h2>[ Results for Computer ]</h2>
+                    <ul>
+                        <li><b>Certificates(1)</b></li>
+                        <div onclick="changeImage('AI_cer.png')" style="cursor: pointer;"> &nbsp; - 인공지능 응용능력 인증 2급</div><br>
+                    
+                        <li><b>Certificates of completion and activities</b></li>
+                        <div onclick="changeImage('internship_comp.png')" style="cursor: pointer;"> &nbsp; - SiliconValley 인턴쉽 수료</div>
+                        <div onclick="changeImage('golden_a.png')" style="cursor: pointer;"> &nbsp; - SiliconValley에서의 GoldenAward 수상</div>
+                        <div onclick="changeImage('intel_capstone_comp.png')" style="cursor: pointer;"> &nbsp; - intel에서의 AI캡스톤 진행, 수료증 취득</div>
+                        <div onclick="changeImage('Uda_python.png')" style="cursor: pointer;"> &nbsp; - UDACITY에서의 python관련 나노학위 취득</div><br>
+                        <li><b>전공관련 교내대회(1)</b></li>
+                        <div onclick="changeImage('ai_x.jpg')" style="cursor: pointer;"> &nbsp; - 헤커톤 대회에서 우수상 수상</div><br>
+                    </ul>
+                    
+                    <span style="float: right; margin-right: 20pt; text-decoration: underline; text-decoration-color:black;"><b id="dynamic"> * 확인하시고자하는 사항을 클릭해주세요! </b></span>
+                </nav>
+                <section id="smallsection">
+                    <img id="result_img" src="AI_cer.png" wigth="100%" height="98.8%" >
+                    
+                </section>
+                <aside>
+
+                </aside>
+            </section>
+
+            <footer>
+                <p><b>CopyRight &#169;mingdi-munzi &#9829;</b></p>
+            </footer>
+        </div>
+        
+        <script src="dynamic.js"></script>
+        
+
+    </body>
+</html>

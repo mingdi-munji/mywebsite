@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ming's_h - food_tour</title>
+    <meta name="description" content="나와 음식의 여행기">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="steam.css">
+</head>
+<body>
+    <div id="bodyall">
+        <header>
+            <div id="iconsection">
+                <a href="home.html"><img src="icon.png" width="90">
+                <img src="HomeMark.png" width="120">
+                </a>
+            </div>
+            <div id="navsection">
+                <nav>
+                    <ul>
+                        <li><a href="Food.html"><h2>Food</h2></a></li>
+                        <li><a href="Dessert.html"><h2>Dessert</h2></a></li>
+                        <li><a href="MyFavorite.html"><h2>My Favorite</h2></a></li>
+                        <li><a href="Results.html"><h2>Results</h2></a></li>
+                        <li><a href="Contact.html"><h2>Contact</h2></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div id="table">
+                <table style="text-align: center;">
+                    <tr><td colspan="3" class="void"></td></tr>
+                    <tr><td class="contents-insta"><a href="https://www.instagram.com/ming_ji24/"><img src="instagramlogo.png" width="100pt" height="100pt"></a></td>
+                        <th><a href="https://www.instagram.com/ming_ji24/">인스타</a></th>
+                        <th><a href="https://www.instagram.com/ming_ji24/">ming_ji24 (밍디먼지)</a></th></tr>
+                    <tr><td colspan="3" class="void"></td></tr>
+                    <tr><td class="contents-kakao"><a href="https://open.kakao.com/o/s27pg1ud"><img src="kakaotalk.png" width="100pt" height="100pt"></td>
+                        <th><a href="https://open.kakao.com/o/s27pg1ud">카카오톡</a></th>
+                        <th><a href="https://open.kakao.com/o/s27pg1ud">minji040304@kakao.com</a></th></tr>
+                    <tr><td colspan="3" class="void"></td></tr>
+                    <tr><td class="contents-mail"><a href="mailto:minimini010326@gmail.com?subject=웹페이지에서 보낸 이메일입니다."><img src="gmaill.png" width="100pt" height="90pt"></td>
+                        <th><a href="mailto:minimini010326@gmail.com?subject=웹페이지에서 보낸 이메일입니다.">지메일(이메일)</a></th>
+                        <th><a href="mailto:minimini010326@gmail.com?subject=웹페이지에서 보낸 이메일입니다.">minimini010326@gmail.com</a></th></tr>
+                    <tr><td colspan="3" class="void"></td></tr>
+                    <tr><td class="contents-discord"><a href="https://discord.com/"><img src="discord.jpg" width="100pt" height="100pt"></td>
+                        <th><a href="https://discord.com/">디스코드</a></th>
+                        <th><a href="https://discord.com/">dust434 (밍지)</a></th></tr>
+                </table>
+            </div>
+        </section>
+        
+        <footer>
+            <p><b>CopyRight &#169;mingdi-munzi &#9829;</b></p>
+        </footer>
+    </div>
+    <script src="steam-script.js"></script>
+</body>
+<script>
+//인스타
+    document.querySelector('.contents-insta').addEventListener('mouseenter', function() {
+    document.querySelector('section').style.backgroundImage = 'url("instagramlogo.png")';
+    document.querySelector('section').style.backgroundSize = 'auto 50%';
+});
+
+document.querySelector('.contents-insta').addEventListener('mouseleave', function() {
+    document.querySelector('section').style.backgroundImage = 'none';
+});
+
+// 카카오톡
+document.querySelector('.contents-kakao').addEventListener('mouseenter', function() {
+    document.querySelector('section').style.backgroundSize = 'auto 50%';
+    document.querySelector('section').style.backgroundImage = 'url("kakaotalk.png")';
+});
+
+document.querySelector('.contents-kakao').addEventListener('mouseleave', function() {
+    document.querySelector('section').style.backgroundImage = 'none';
+});
+
+// 이메일
+document.querySelector('.contents-mail').addEventListener('mouseenter', function() {
+    document.querySelector('section').style.backgroundSize = 'auto 50%';
+    document.querySelector('section').style.backgroundImage = 'url("gmaill.png")';
+});
+
+document.querySelector('.contents-mail').addEventListener('mouseleave', function() {
+    document.querySelector('section').style.backgroundImage = 'none';
+});
+
+// 디스코드
+document.querySelector('.contents-discord').addEventListener('mouseenter', function() {
+    document.querySelector('section').style.backgroundSize = 'auto 50%';
+    document.querySelector('section').style.backgroundImage = 'url("discord.jpg")';
+});
+
+document.querySelector('.contents-discord').addEventListener('mouseleave', function() {
+    document.querySelector('section').style.backgroundImage = 'none';
+});
+
+</script>
+</html>
